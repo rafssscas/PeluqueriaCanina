@@ -1,11 +1,15 @@
 package com.mycompany.peluqueriacanina;
 
+import com.mycompany.peluqueriacanina.igu.Principal;
 
 public class PeluqueriaCanina {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println("prueba Creacion de repositorio");
-         System.out.println("prueba Creacion de repositorio");
+        //Llamar a principal
+        Principal princ = new Principal();
+        //Muestro ventana principal
+        princ.setVisible(true);
+        //Posicionada en el centro de la pantalla
+        princ.setLocationRelativeTo(null);
     }
 }
