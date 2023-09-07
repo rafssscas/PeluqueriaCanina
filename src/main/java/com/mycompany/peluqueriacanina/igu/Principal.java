@@ -37,6 +37,11 @@ public class Principal extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("HP Simplified Hans", 0, 24)); // NOI18N
         jButton2.setText("Ver Datos");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setFont(new java.awt.Font("HP Simplified Hans", 0, 24)); // NOI18N
         jButton3.setText("Salir");
@@ -122,6 +127,16 @@ public class Principal extends javax.swing.JFrame {
         //La posiciona en el centro de la pantalla
         pantalla.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnCargaDatosActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        
+         //Creo una instancia
+        VerDatos pantalla = new VerDatos();
+        //Muestra la instancia
+        pantalla.setVisible(true);
+        //La posiciona en el centro de la pantalla
+        pantalla.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
    
 
